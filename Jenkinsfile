@@ -8,6 +8,6 @@ node{
     } 
   }
   stage ("running appscan on cloud"){
-      appscan application: '4a66c9fa-5375-e811-871a-002590731623', credentials: 'stage_asoc', failureConditions: [failure_condition(failureType: 'total', threshold: 3)], name: 'test_2607', scanner: static_analyzer('E:\\work\\SimpleIOT-Maven\\SimpleIOT-Maven'), type: 'Static Analyzer'
+      appscan application: '18f3c3ca-a689-e811-ad5d-00259057d989', credentials: 'stage_asoc', name: 'test_scm_0730', scanner:static_analyzer('C:\\Users\\anurag-s\\.jenkins\\workspace\\test_pipeline_scm'), type: 'Static Analyzer'
   }
 }
