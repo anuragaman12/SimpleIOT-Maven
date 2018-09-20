@@ -3,7 +3,7 @@ node{
 	git 'https://github.com/endangeredspecies/SimpleIOT-Maven.git'
   }
   stage ('Build') {
-	withMaven(jdk: 'jdk8', maven: 'maven_default') {
+	withMaven(jdk: 'jdk8', maven: 'maven3') {
       sh 'mvn clean install'
     } 
   }
