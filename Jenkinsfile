@@ -4,7 +4,7 @@ node{
   }
   stage ('Build') {
 	withMaven(jdk: 'jdk8', maven: 'maven_default') {
-      bat 'mvn clean install'
+      sh 'mvn clean install'
     } 
   }
   stage ("running appscan on cloud"){
